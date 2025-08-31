@@ -1,9 +1,13 @@
+"use client";
+
 import Plasma from "@/components/Plasma";
 import SplitText from "@/components/SplitText";
 
 import { PiCricketDuotone } from "react-icons/pi";
 import { BiSolidCricketBall } from "react-icons/bi";
 import { FaEye } from "react-icons/fa6";
+
+import { motion } from "motion/react";
 
 const Hero = () => {
   return (
@@ -13,8 +17,8 @@ const Hero = () => {
           color="#de2424"
           speed={0.6}
           direction="forward"
-          scale={0.5}
-          opacity={1}
+          scale={0.8}
+          opacity={0.8}
         />
 
         <div className="absolute left-0 top-0 w-full min-h-dvh flex flex-col gap-8 md:gap-12 justify-center items-center">
@@ -48,20 +52,47 @@ const Hero = () => {
           />
 
           <div className="flex flex-col md:flex-row items-center gap-3 md:gap-5">
-            <button
+            <motion.button
+              initial={{
+                scale: 0,
+                opacity: 0,
+                filter: "blur(50px)",
+              }}
+              whileInView={{
+                scale: 1,
+                opacity: 1,
+                filter: "blur(0px)",
+                transition: {
+                  duration: 0.3,
+                },
+              }}
               type="button"
               className="w-full md:w-fit px-6 flex justify-center items-center gap-1.5 cursor-pointer py-3 md:py-4 md:px-8 bg-gray-50 text-xl md:text-2xl text-gray-900 rounded-full font-light"
             >
               <BiSolidCricketBall />
               Join the hunt
-            </button>
-            <button
+            </motion.button>
+            <motion.button
               type="button"
+              initial={{
+                scale: 0,
+                opacity: 0,
+                filter: "blur(50px)",
+              }}
+              whileInView={{
+                scale: 1,
+                opacity: 1,
+                filter: "blur(0px)",
+                delay: 0.5,
+                transition: {
+                  duration: 0.3,
+                },
+              }}
               className="w-full md:w-fit px-6 flex justify-center items-center gap-1.5 cursor-pointer py-3 md:py-4 md:px-8 glass-nav bg-gray-600/30 text-gray-400 text-xl md:text-2xl rounded-full font-light border border-gray-500"
             >
               <FaEye />
               Witness the power
-            </button>
+            </motion.button>
           </div>
         </div>
       </div>
