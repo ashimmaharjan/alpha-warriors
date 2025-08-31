@@ -25,53 +25,6 @@ const AlphaWarriorsLanding = () => {
 
   return (
     <div className="min-h-screen bg-gray-900 text-white">
-      {/* About Section */}
-      <section id="about" className="py-20 bg-gray-900">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-red-500 to-cyan-400 bg-clip-text text-transparent">
-                About Alpha Warriors
-              </h2>
-              <p className="text-lg text-gray-300 mb-6">
-                We are Nepal's premier indoor cricket team, bringing passion,
-                skill, and warrior spirit to every match. Founded with the
-                vision of excellence, we've dominated the indoor cricket scene
-                across Nepal.
-              </p>
-              <p className="text-lg text-gray-300 mb-8">
-                Our team represents the finest talents in Nepalese cricket,
-                combining traditional cricket values with modern indoor gameplay
-                techniques.
-              </p>
-              <div className="flex space-x-4">
-                <div className="flex items-center text-cyan-400">
-                  <Trophy className="w-5 h-5 mr-2" />
-                  <span>Championship Winners</span>
-                </div>
-                <div className="flex items-center text-red-400">
-                  <Users className="w-5 h-5 mr-2" />
-                  <span>Elite Squad</span>
-                </div>
-              </div>
-            </div>
-            <div className="relative">
-              <div className="bg-gradient-to-br from-red-500/20 to-cyan-400/20 p-8 rounded-3xl backdrop-blur-sm border border-gray-700">
-                <div className="text-center">
-                  <div className="w-32 h-32 bg-gradient-to-br from-red-500 to-cyan-400 rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <Trophy className="w-16 h-16 text-white" />
-                  </div>
-                  <h3 className="text-2xl font-bold mb-2">Team Excellence</h3>
-                  <p className="text-gray-300">
-                    Committed to bringing glory to Nepal through cricket
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Team Highlights */}
       <section id="team" className="py-20 bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

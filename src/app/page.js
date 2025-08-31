@@ -1,3 +1,4 @@
+import About from "./components-sections/About";
 import AlphaWarriorsLanding from "./components-sections/claude-demo";
 import Hero from "./components-sections/Hero";
 import Navbar from "./components-sections/Navbar";
@@ -10,7 +11,7 @@ export default function Home() {
         <Navbar />
         <Hero />
         <Stats />
-        <AlphaWarriorsLanding />
+        <About />
       </div>
     </section>
   );

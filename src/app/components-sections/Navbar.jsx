@@ -38,12 +38,12 @@ const Navbar = () => {
             className="bg-gray-50 rounded-full size-14 object-contain border border-gray-50"
           />
 
-          <span className="text-3xl md:text-2xl font-semibold tracking-tighter">
+          <span className="text-3xl md:text-2xl font-semibold tracking-tighter text-white">
             Alpha Warriors
           </span>
         </div>
 
-        <div className="w-fit h-full hidden md:flex items-center gap-5 text-xl pr-3">
+        <div className="w-fit h-full text-white hidden md:flex items-center gap-5 text-xl pr-3">
           {links.map((link, index) => (
             <Link key={index} href={link.link}>
               {link.name}

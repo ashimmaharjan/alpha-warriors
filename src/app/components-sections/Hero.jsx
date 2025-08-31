@@ -22,7 +22,7 @@ const Hero = () => {
         />
 
         <div className="absolute left-0 top-0 w-full min-h-dvh flex flex-col gap-8 md:gap-12 justify-center items-center">
-          <div className="glass-nav w-fit h-fit px-5 bg-gray-600/30 py-1.5 rounded-full border-[1px] border-gray-400 flex items-center gap-2 text-lg md:text-xl">
+          <div className="glass-nav w-fit h-fit px-5 bg-gray-600/30 py-1.5 rounded-full border-[1px] border-gray-400 flex items-center gap-2 text-lg md:text-xl text-white">
             <PiCricketDuotone />
             Indoor Cricket team
           </div>
@@ -53,6 +53,7 @@ const Hero = () => {
 
           <div className="flex flex-col md:flex-row items-center gap-3 md:gap-5">
             <motion.button
+              viewport={{ once: true }}
               initial={{
                 scale: 0,
                 opacity: 0,
@@ -73,6 +74,7 @@ const Hero = () => {
               Join the hunt
             </motion.button>
             <motion.button
+              viewport={{ once: true }}
               type="button"
               initial={{
                 scale: 0,
