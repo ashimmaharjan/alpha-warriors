@@ -2,6 +2,7 @@ import About from "./components-sections/About";
 import AlphaWarriorsLanding from "./components-sections/claude-demo";
 import Hero from "./components-sections/Hero";
 import Navbar from "./components-sections/Navbar";
+import Players from "./components-sections/Players";
 import Stats from "./components-sections/Stats";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
         <Hero />
         <Stats />
         <About />
+        <Players />
       </div>
     </section>
   );

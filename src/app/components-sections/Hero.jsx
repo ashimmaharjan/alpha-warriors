@@ -8,27 +8,26 @@ import { BiSolidCricketBall } from "react-icons/bi";
 import { FaEye } from "react-icons/fa6";
 
 import { motion } from "motion/react";
+import Iridescence from "@/components/Iridescence";
 
 const Hero = () => {
   return (
     <section>
       <div className="w-full min-h-dvh bg-gray-950">
-        <Plasma
-          color="#de2424"
+        <Iridescence
+          color={[1, 0, 0.3]}
+          mouseReact={false}
+          amplitude={0.1}
           speed={0.6}
-          direction="forward"
-          scale={0.8}
-          opacity={0.8}
         />
-
-        <div className="absolute left-0 top-0 w-full min-h-dvh flex flex-col gap-8 md:gap-12 justify-center items-center">
-          <div className="glass-nav w-fit h-fit px-5 bg-gray-600/30 py-1.5 rounded-full border-[1px] border-gray-400 flex items-center gap-2 text-lg md:text-xl text-white">
+        <div className="absolute left-0 top-0 w-full min-h-dvh flex flex-col gap-10 md:gap-12 justify-center items-center">
+          <div className="glass-nav w-fit h-fit px-5 bg-gray-600/30 py-1.5 rounded-full border-[1px] border-gray-400 flex items-center gap-2 text-base md:text-xl text-white">
             <PiCricketDuotone />
             Indoor Cricket team
           </div>
           <SplitText
             text="WE DON'T PLAY CRICKET,"
-            className="text-5xl px-5 md:text-6xl font-semibold text-center h-fit tracking-tighter text-tertiary md:px-10"
+            className="text-5xl px-5 md:text-6xl font-bold text-center text-shadow-lg text-shadow-neutral-500 h-fit tracking-tighter text-tertiary md:px-10"
             delay={70}
             duration={2}
             ease="elastic.out(1,0.3)"
@@ -40,7 +39,7 @@ const Hero = () => {
           />
           <SplitText
             text="WE HUNT VICTORIES"
-            className="text-5xl px-5 md:text-6xl font-semibold text-center h-fit tracking-tighter text-tertiary md:px-10 -mt-5 md:-mt-8"
+            className="text-5xl px-5 md:text-6xl font-bold text-shadow-lg text-shadow-neutral-500 text-center h-fit tracking-tighter text-tertiary md:px-10 -mt-5 md:-mt-8"
             delay={100}
             duration={2}
             ease="elastic.out(1,0.3)"
@@ -90,7 +89,7 @@ const Hero = () => {
                   duration: 0.3,
                 },
               }}
-              className="w-full md:w-fit px-6 flex justify-center items-center gap-1.5 cursor-pointer py-3 md:py-4 md:px-8 glass-nav bg-gray-600/30 text-gray-400 text-xl md:text-2xl rounded-full font-light border border-gray-500"
+              className="w-full md:w-fit px-6 flex justify-center items-center gap-1.5 cursor-pointer py-3 md:py-4 md:px-8 glass-nav bg-gray-400/30 text-gray-300 text-xl md:text-2xl rounded-full font-light border border-gray-500"
             >
               <FaEye />
               Witness the power

@@ -35,10 +35,10 @@ const Navbar = () => {
             height={300}
             quality={100}
             loading="lazy"
-            className="bg-gray-50 rounded-full size-14 object-contain border border-gray-50"
+            className="bg-gray-50 rounded-full size-12 md:size-14 object-contain border border-gray-50"
           />
 
-          <span className="text-3xl md:text-2xl font-semibold tracking-tighter text-white">
+          <span className="text-2xl font-semibold tracking-tighter text-white">
             Alpha Warriors
           </span>
         </div>
