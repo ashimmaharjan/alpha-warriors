@@ -41,7 +41,6 @@ const Stats = () => {
                 alt="stat-image"
                 width={500}
                 height={500}
-                quality={100}
                 loading="lazy"
                 className="size-20 object-cover"
               />

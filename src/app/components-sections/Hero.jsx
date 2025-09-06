@@ -72,7 +72,7 @@ const Hero = () => {
               <BiSolidCricketBall />
               Join the hunt
             </motion.button>
-            <motion.button
+            <motion.a
               viewport={{ once: true }}
               type="button"
               initial={{
@@ -89,11 +89,13 @@ const Hero = () => {
                   duration: 0.3,
                 },
               }}
-              className="w-full md:w-fit px-6 flex justify-center items-center gap-1.5 cursor-pointer py-3 md:py-4 md:px-8 glass-nav bg-gray-400/30 text-gray-300 text-xl md:text-2xl rounded-full font-light border border-gray-500"
+              href="https://www.instagram.com/alphawarriors__/"
+              target="_blank"
+              className="w-full md:w-fit px-6 flex justify-center items-center gap-1.5 cursor-pointer py-3 md:py-4 md:px-8 glass-nav bg-gray-400/30 text-gray-300 text-xl md:text-2xl rounded-full font-light border border-gray-400"
             >
               <FaEye />
               Witness the power
-            </motion.button>
+            </motion.a>
           </div>
         </div>
       </div>

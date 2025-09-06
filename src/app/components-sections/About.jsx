@@ -81,7 +81,6 @@ const About = () => {
               alt="logo"
               width={500}
               height={500}
-              quality={100}
               loading="lazy"
               className="size-[230px] bg-white rounded-full"
             />
@@ -90,7 +89,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-10">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 mt-10">
         <div className="col-span-1 h-fit">
           <div className="flex items-center gap-3">
             <Lottie
@@ -128,11 +127,11 @@ const About = () => {
             </h3>
           </div>
 
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 mt-8">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 mt-8">
             {ourValues.map((value, index) => (
               <div key={index} className="col-span-1 h-fit">
                 <div className="flex items-center justify-center gap-2.5">
-                  <span className="text-primary text-2xl bg-gray-300/80 p-2 rounded-2xl border border-gray-50">
+                  <span className="text-primary text-2xl bg-gray-200/90 p-2 rounded-2xl border border-gray-50">
                     {value.icon}
                   </span>
                   <h3 className="text-gray-100 text-2xl text-center">
