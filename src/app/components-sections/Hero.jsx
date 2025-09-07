@@ -66,6 +66,13 @@ const Hero = () => {
                   duration: 0.3,
                 },
               }}
+              whileHover={{
+                scale: 1.03,
+                transition: {
+                  type: "spring",
+                  stiffness: 300,
+                },
+              }}
               type="button"
               className="w-full md:w-fit px-6 flex justify-center items-center gap-1.5 cursor-pointer py-3 md:py-4 md:px-8 bg-gray-50 text-xl md:text-2xl text-gray-900 rounded-full font-light"
             >
@@ -87,6 +94,13 @@ const Hero = () => {
                 delay: 0.5,
                 transition: {
                   duration: 0.3,
+                },
+              }}
+              whileHover={{
+                scale: 1.03,
+                transition: {
+                  type: "spring",
+                  stiffness: 300,
                 },
               }}
               href="https://www.instagram.com/alphawarriors__/"

@@ -8,7 +8,7 @@ import warriorsAnimation from "../../../public/animations/warriors.json";
 
 const Players = () => {
   return (
-    <section className="w-full h-auto bg-gray-900 px-5 md:px-20 py-16">
+    <section className="w-full h-auto bg-gradient-to-b from-[#070111] to-[#261D36] px-5 md:px-20 py-16">
       <div className="flex items-center gap-3">
         <Lottie
           className="size-14 border border-gray-400 p-1.5 rounded-2xl"

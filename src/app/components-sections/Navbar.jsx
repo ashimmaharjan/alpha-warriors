@@ -26,7 +26,7 @@ const Navbar = () => {
   ];
   return (
     <section className="fixed top-0 left-0 z-50 w-full h-auto">
-      <nav className="w-full md:w-[90%] lg:w-[85%] h-auto rounded-none md:rounded-full border-b border-b-gray-500 rounded-b-3xl md:border md:border-gray-500 mx-auto px-5 py-3 lg:px-8 lg:py-5 flex justify-between items-center md:mt-8 glass-nav">
+      <nav className="w-full md:w-[90%] lg:w-[85%] h-auto rounded-none md:rounded-full border-b border-b-gray-500 rounded-b-3xl md:border md:border-gray-300 mx-auto px-5 py-3 lg:px-8 lg:py-5 flex justify-between items-center md:mt-8 glass-nav">
         <div className="flex items-center gap-2.5">
           <Image
             src="/images/logo-cropped.png"

@@ -36,7 +36,7 @@ const About = () => {
     },
   ];
   return (
-    <section className="w-full h-auto bg-gray-800 px-5 md:px-20 py-16">
+    <section className="w-full h-auto bg-gradient-to-b from-[#261D36] to-[#070111] px-5 md:px-20 py-16">
       <h3 className="text-white text-3xl md:text-4xl font-semibold tracking-tighter">
         About Us
       </h3>
@@ -53,12 +53,12 @@ const About = () => {
             to make our mark in one of Nepal’s most exciting tournaments.
           </p>
 
-          <div className="flex items-center mt-6 gap-6">
+          <div className="flex items-center mt-6 gap-5 md:gap-6">
             <div className="flex items-center gap-2 text-lg">
               <div className="w-fit h-fit p-1.5 bg-gray-50 rounded-md shadow-inner text-primary border border-gray-200">
                 <Trophy />
               </div>
-              <span className="text-sm md:text-base text-gray-200">
+              <span className="text-base md:text-xl text-gray-200">
                 Championship Winners
               </span>
             </div>
@@ -67,7 +67,7 @@ const About = () => {
               <div className="w-fit h-fit p-1.5 bg-gray-50 rounded-md shadow-inner text-primary border border-gray-200">
                 <Users />
               </div>
-              <span className="text-sm md:text-base text-gray-200">
+              <span className="text-base md:text-xl text-gray-200">
                 Elite Squad
               </span>
             </div>
@@ -130,7 +130,7 @@ const About = () => {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 mt-8">
             {ourValues.map((value, index) => (
               <div key={index} className="col-span-1 h-fit">
-                <div className="flex items-center justify-center gap-2.5">
+                <div className="flex items-center md:justify-center gap-2.5">
                   <span className="text-primary text-2xl bg-gray-200/90 p-2 rounded-2xl border border-gray-50">
                     {value.icon}
                   </span>

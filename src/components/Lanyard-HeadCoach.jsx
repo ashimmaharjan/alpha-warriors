@@ -7,7 +7,6 @@ import {
   useTexture,
   Environment,
   Lightformer,
-  Text,
 } from "@react-three/drei";
 import {
   BallCollider,
@@ -22,7 +21,7 @@ import * as THREE from "three";
 
 extend({ MeshLineGeometry, MeshLineMaterial });
 
-export default function Lanyard({
+export default function LanyardHeadCoach({
   position = [0, 0, 30],
   gravity = [0, -40, 0],
   fov = 20,
@@ -95,9 +94,8 @@ function Band({ maxSpeed = 50, minSpeed = 0 }) {
     linearDamping: 4,
   };
 
-  // Fixed: Use string paths instead of imports
   const { nodes, materials } = useGLTF("/models/card.glb");
-  const texture = useTexture("/images/lanyard.png");
+  const texture = useTexture("/images/lanyard-3.png");
 
   const [curve] = useState(
     () =>
@@ -218,16 +216,6 @@ function Band({ maxSpeed = 50, minSpeed = 0 }) {
             )}
           >
             <mesh geometry={nodes.card.geometry}>
-              <Text
-                position={[0, -0.06, 0]}
-                fontSize={0.06}
-                color="#000000"
-                anchorX="center"
-                anchorY="middle"
-              >
-                John Smith
-              </Text>
-
               <meshPhysicalMaterial
                 map={materials.base.map}
                 map-anisotropy={16}

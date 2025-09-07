@@ -1,7 +1,7 @@
 import About from "./components-sections/About";
 import AlphaWarriorsLanding from "./components-sections/claude-demo";
 import Hero from "./components-sections/Hero";
-import Messages from "./components-sections/Messages";
+import LeadershipVoices from "./components-sections/LeadershipVoices";
 import Navbar from "./components-sections/Navbar";
 import Players from "./components-sections/Players";
 import Stats from "./components-sections/Stats";
@@ -15,7 +15,7 @@ export default function Home() {
         <Stats />
         <About />
         <Players />
-        <Messages />
+        <LeadershipVoices />
       </div>
     </section>
   );

@@ -16,7 +16,7 @@ export const players = [
     roleIcon: <GiCricketBat />,
     cardRole: "Captain • Top-order Batter",
     profileRole: "Top-order Batter • Medium-pace option",
-    image: "/images/players/janak.jpg",
+    image: "/images/players/janak.JPG",
     batting: {
       style: "Left-hand",
       order: "Top-order",
@@ -72,7 +72,7 @@ export const players = [
     roleIcon: <GiCricketBat />,
     cardRole: "Top-order Batter / Medium-pace option",
     profileRole: "Top-order Batter • Occasional Bowler",
-    image: "/images/players/mukesh.jpg",
+    image: "/images/players/mukesh.JPG",
     batting: {
       style: "Right-hand",
       order: "Top-order",
@@ -240,7 +240,7 @@ export const players = [
     roleIcon: <GiCricketBat />,
     cardRole: "Lower-order Batter/ Medium Face Pace",
     profileRole: "Lower-order Batter",
-    image: "/images/players/mahendra.jpg",
+    image: "/images/players/mahendra.JPG",
     batting: {
       style: "Right-hand",
       order: "Lower-order",
