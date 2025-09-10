@@ -1,29 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import { links } from "../../../utils/data/navlinks";
+
 const Navbar = () => {
-  const links = [
-    {
-      name: "Home",
-      link: "#",
-    },
-    {
-      name: "About",
-      link: "#about",
-    },
-    {
-      name: "Team",
-      link: "#team",
-    },
-    {
-      name: "Fixtures",
-      link: "#fixtures",
-    },
-    {
-      name: "Contact",
-      link: "#contact",
-    },
-  ];
   return (
     <section className="fixed top-0 left-0 z-50 w-full h-auto">
       <nav className="w-full md:w-[90%] lg:w-[85%] h-auto rounded-none md:rounded-full border-b border-b-gray-500 rounded-b-3xl md:border md:border-gray-300 mx-auto px-5 py-3 lg:px-8 lg:py-5 flex justify-between items-center md:mt-8 glass-nav">

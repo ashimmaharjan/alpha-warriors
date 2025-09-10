@@ -2,9 +2,12 @@
 
 import Image from "next/image";
 import { players } from "../../../utils/data/playerData";
+import { staff } from "../../../utils/data/staffData";
+
 import Lottie from "lottie-react";
 
 import warriorsAnimation from "../../../public/animations/warriors.json";
+import managementAnimation from "../../../public/animations/management.json";
 
 const Players = () => {
   return (
@@ -63,6 +66,57 @@ const Players = () => {
                   } size-10 bg-transparent border text-2xl border-gray-300 rounded-full text-gray-50 flex justify-center items-center`}
                 >
                   {player.roleIcon}
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div className="w-[95%] mx-auto h-[1px] border-t border-t-gray-200 border-dashed my-10"></div>
+
+      <div className="flex items-center gap-3">
+        <Lottie
+          className="size-14 border border-gray-400 p-1.5 rounded-2xl"
+          animationData={managementAnimation}
+          loop
+          autoPlay
+        />
+
+        <h3 className="text-white text-3xl md:text-4xl font-semibold tracking-tighter">
+          Management
+        </h3>
+      </div>
+
+      <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {staff.map((staff) => (
+          <div
+            className="col-span-1 relative w-full h-fit p-5 md:p-6 border-2 border-gray-400 rounded-[14px] shadow shadow-gray-700 cursor-pointer transition-all duration-300 ease-in-out hover:scale-105 hover:-rotate-2 hover:shadow-2xl bg-gray-800 hover:bg-gray-600"
+            key={staff.id}
+          >
+            <div className="text-gray-400">
+              <Image
+                src={staff.image || "/images/logo.jpg"}
+                alt={staff.name}
+                width={500}
+                height={500}
+                loading="lazy"
+                className="w-full aspect-square object-cover rounded-[10px] border border-gray-300"
+              />
+
+              <h3 className="text-gray-100 font-semibold tracking-tight text-center uppercase text-2xl mt-8">
+                {staff.name}
+              </h3>
+
+              <div className="flex items-center justify-between mt-3">
+                <div className="size-10 bg-transparent border text-2xl border-transparent rounded-full text-gray-50 flex justify-center items-center"></div>
+
+                <span className="tracking-tight text-gray-400 text-center text-xl">
+                  {staff.role}
+                </span>
+
+                <div className="size-10 bg-transparent border text-2xl border-gray-300 rounded-full text-gray-50 flex justify-center items-center">
+                  {staff.roleIcon}
                 </div>
               </div>
             </div>

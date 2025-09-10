@@ -30,7 +30,7 @@ const Stats = () => {
     },
   ];
   return (
-    <section className="w-full h-auto bg-gradient-to-b to-[#261D36] from-[#920239] md:px-10 py-16">
+    <section className="w-full h-auto bg-gradient-to-b to-[#261D36] from-[#070111]/90 md:px-10 py-16">
       <div className="grid grid-cols-1 px-5 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {stats.map((stat, index) => (
           <div
