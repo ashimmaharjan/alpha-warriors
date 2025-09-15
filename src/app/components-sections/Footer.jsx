@@ -31,7 +31,7 @@ const socials = [
 
 const Footer = () => {
   return (
-    <footer className="w-full border-t border-t-gray-200 border-dotted h-auto bg-gradient-to-b to-[#261D36] from-[#070111] px-5 md:px-20 py-16">
+    <footer className="w-full border-t border-t-gray-200 border-dotted h-auto bg-gradient-to-b from-[#261D36] to-[#070111] px-5 md:px-20 py-16">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-5">
         <div className="col-span-1 h-auto">
           <Image
@@ -48,7 +48,7 @@ const Footer = () => {
             teamwork, and excellence to Nepal's indoor cricket.
           </p>
 
-          <div className="flex items-center mt-8">
+          <div className="flex items-center mt-12">
             {socials.map((social, index) => (
               <Link key={index} href={social.link}>
                 <Lottie animationData={social.icon} className="size-14" />
@@ -107,11 +107,19 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex justify-center items-center mt-5 border-t border-t-gray-300 border-dotted">
+      <div className="flex flex-col md:flex-row justify-between items-center mt-5 border-t border-t-gray-300 border-dotted">
         <div>
-          <span className="text-base text-gray-400 mt-5 flex items-center gap-2">
+          <span className="text-base text-gray-300 mt-5 flex items-center gap-2">
             <FaCopyright /> 2025 Alpha Warriors - All rights reserved.
           </span>
+        </div>
+
+        <div className="flex items-center text-gray-300 gap-1 mt-4">
+          <span>Created By:</span>
+
+          <a href="https://www.ashimmaharjan.com.np/" className="underline">
+            This Guy
+          </a>
         </div>
       </div>
     </footer>

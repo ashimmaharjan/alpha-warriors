@@ -95,4 +95,8 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  .heading {
+    @apply text-white text-4xl lg:text-5xl font-semibold tracking-tighter;
+  }
 }

@@ -36,10 +36,11 @@ const About = () => {
     },
   ];
   return (
-    <section className="w-full h-auto bg-gradient-to-b from-[#261D36] to-[#070111] px-5 md:px-20 py-16">
-      <h3 className="text-white text-3xl md:text-4xl font-semibold tracking-tighter">
-        About Us
-      </h3>
+    <section
+      id="about"
+      className="w-full h-auto bg-gradient-to-b from-[#261D36] to-[#070111] px-5 md:px-20 py-16"
+    >
+      <h3 className="heading">About Us</h3>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 my-5">
         <div className="col-span-1 text-gray-400 w-full order-2 lg:order-1">
@@ -89,8 +90,8 @@ const About = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 mt-10">
-        <div className="col-span-1 h-fit">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-14 mt-10">
+        <div className="col-span-1 lg:col-span-5 h-fit mt-10 md:mt-0">
           <div className="flex items-center gap-3">
             <Lottie
               className="size-14 border border-gray-400 p-1.5 rounded-2xl"
@@ -98,9 +99,7 @@ const About = () => {
               loop
               autoPlay
             />
-            <h3 className="text-white text-3xl md:text-4xl font-semibold tracking-tighter">
-              Our Vision
-            </h3>
+            <h3 className="heading">Our Vision</h3>
           </div>
 
           <p className="text-lg md:text-xl tracking-tight text-gray-400 mt-5">
@@ -113,7 +112,7 @@ const About = () => {
           </p>
         </div>
 
-        <div className="col-span-1 h-fit">
+        <div className="col-span-1 lg:col-span-7 h-fit">
           <div className="flex items-center gap-3">
             <Lottie
               className="size-14 border border-gray-400 p-1.5 rounded-2xl"
@@ -122,15 +121,13 @@ const About = () => {
               autoPlay
             />
 
-            <h3 className="text-white text-3xl md:text-4xl font-semibold tracking-tighter">
-              Our Values
-            </h3>
+            <h3 className="heading">Our Values</h3>
           </div>
 
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 mt-8">
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-10 md:gap-3 mt-8">
             {ourValues.map((value, index) => (
               <div key={index} className="col-span-1 h-fit">
-                <div className="flex items-center md:justify-center gap-2.5">
+                <div className="flex items-center md:justify-center  gap-2.5">
                   <span className="text-primary text-2xl bg-gray-200/90 p-2 rounded-2xl border border-gray-50">
                     {value.icon}
                   </span>
@@ -139,7 +136,7 @@ const About = () => {
                   </h3>
                 </div>
 
-                <p className="text-gray-400 tracking-tight mt-3 text-center">
+                <p className="text-gray-400 tracking-tight mt-3 text-left md:text-center">
                   {value.desc}
                 </p>
               </div>

@@ -19,9 +19,7 @@ const LeadershipVoices = () => {
           autoPlay
         />
 
-        <h3 className="text-white text-3xl md:text-4xl font-semibold tracking-tighter">
-          Leadership Voices
-        </h3>
+        <h3 className="heading">Leadership Voices</h3>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8">

@@ -1,15 +1,15 @@
 export const links = [
   {
     name: "Home",
-    link: "#",
+    link: "#home",
   },
   {
     name: "About",
     link: "#about",
   },
   {
-    name: "Team",
-    link: "#team",
+    name: "Warriors",
+    link: "#warriors",
   },
   {
     name: "Fixtures",

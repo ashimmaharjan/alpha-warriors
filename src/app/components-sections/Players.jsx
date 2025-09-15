@@ -11,7 +11,10 @@ import managementAnimation from "../../../public/animations/management.json";
 
 const Players = () => {
   return (
-    <section className="w-full h-auto bg-gradient-to-b from-[#070111] to-[#261D36] px-5 md:px-20 py-16">
+    <section
+      id="warriors"
+      className="w-full h-auto bg-gradient-to-b from-[#070111] to-[#261D36] px-5 md:px-20 pb-12"
+    >
       <div className="flex items-center gap-3">
         <Lottie
           className="size-14 border border-gray-400 p-1.5 rounded-2xl"
@@ -20,9 +23,7 @@ const Players = () => {
           autoPlay
         />
 
-        <h3 className="text-white text-3xl md:text-4xl font-semibold tracking-tighter">
-          Warriors
-        </h3>
+        <h3 className="heading">Warriors</h3>
       </div>
 
       <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -83,9 +84,7 @@ const Players = () => {
           autoPlay
         />
 
-        <h3 className="text-white text-3xl md:text-4xl font-semibold tracking-tighter">
-          Management
-        </h3>
+        <h3 className="heading">Management</h3>
       </div>
 
       <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

@@ -12,7 +12,7 @@ import Iridescence from "@/components/Iridescence";
 
 const Hero = () => {
   return (
-    <section>
+    <section id="home">
       <div className="w-full min-h-dvh bg-gray-950">
         <Iridescence
           color={[1, 0, 0.3]}

@@ -1,9 +1,8 @@
-import { Geist } from "next/font/google";
+import { Oswald } from "next/font/google";
 import "./globals.css";
 
-const geist = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const oswald = Oswald({
+  variable: "--font-oswald",
 });
 
 export const metadata = {
@@ -15,7 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geist.variable} antialiased w-screen overflow-x-hidden`}
+        className={`${oswald.variable} antialiased w-screen overflow-x-hidden font-sans`}
       >
         {children}
       </body>

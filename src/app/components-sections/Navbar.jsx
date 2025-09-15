@@ -1,9 +1,23 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 
 import { links } from "../../../utils/data/navlinks";
 
 const Navbar = () => {
+  const handleNavClick = (e, link) => {
+    e.preventDefault();
+
+    const section = document.querySelector(link);
+    const offsetTop = section.offsetTop;
+
+    window.scrollTo({
+      top: offsetTop - 180,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <section className="fixed top-0 left-0 z-50 w-full h-auto">
       <nav className="w-full md:w-[90%] lg:w-[85%] h-auto rounded-none md:rounded-full border-b border-b-gray-500 rounded-b-3xl md:border md:border-gray-300 mx-auto px-5 py-3 lg:px-8 lg:py-5 flex justify-between items-center md:mt-8 glass-nav">
@@ -24,7 +38,11 @@ const Navbar = () => {
 
         <div className="w-fit h-full text-white hidden md:flex items-center gap-5 text-xl pr-3">
           {links.map((link, index) => (
-            <Link key={index} href={link.link}>
+            <Link
+              key={index}
+              href={link.link}
+              onClick={(e) => handleNavClick(e, link.link)}
+            >
               {link.name}
             </Link>
           ))}
