@@ -60,7 +60,10 @@ const ContactUs = () => {
           <form action="" className="flex flex-col gap-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
               <div className="flex flex-col gap-2">
-                <label htmlFor="firstName" className="text-gray-300 text-lg">
+                <label
+                  htmlFor="firstName"
+                  className="text-gray-300 text-lg font-extralight"
+                >
                   First Name
                 </label>
                 <input
@@ -71,7 +74,10 @@ const ContactUs = () => {
               </div>
 
               <div className="flex flex-col gap-2">
-                <label htmlFor="lastName" className="text-gray-300 text-lg">
+                <label
+                  htmlFor="lastName"
+                  className="text-gray-300 text-lg font-extralight"
+                >
                   Last Name
                 </label>
                 <input
@@ -83,7 +89,10 @@ const ContactUs = () => {
             </div>
 
             <div className="flex flex-col gap-2">
-              <label htmlFor="email" className="text-gray-300 text-lg">
+              <label
+                htmlFor="email"
+                className="text-gray-300 text-lg font-extralight"
+              >
                 Email
               </label>
               <input
@@ -94,7 +103,10 @@ const ContactUs = () => {
             </div>
 
             <div className="flex flex-col gap-2">
-              <label htmlFor="message" className="text-gray-300 text-lg">
+              <label
+                htmlFor="message"
+                className="text-gray-300 text-lg font-extralight"
+              >
                 How can we help you?
               </label>
               <textarea

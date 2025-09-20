@@ -1,9 +1,10 @@
-import { Oswald } from "next/font/google";
 import "./globals.css";
+import { Bricolage_Grotesque } from "next/font/google";
 
-const oswald = Oswald({
-  variable: "--font-oswald",
+const bricolage = Bricolage_Grotesque({
   subsets: ["latin"],
+  weight: ["200", "300", "400", "500", "600", "700", "800"],
+  variable: "--font-bricolage",
 });
 
 export const metadata = {
@@ -15,7 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${oswald.variable} antialiased w-screen overflow-x-hidden font-sans`}
+        className={`${bricolage.variable} font-sans antialiased w-screen overflow-x-hidden`}
       >
         {children}
       </body>

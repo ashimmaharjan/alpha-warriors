@@ -30,8 +30,20 @@ const socials = [
 ];
 
 const Footer = () => {
+  const handleNavClick = (e, link) => {
+    e.preventDefault();
+
+    const section = document.querySelector(link);
+    const offsetTop = section.offsetTop;
+
+    window.scrollTo({
+      top: offsetTop - 180,
+      behavior: "smooth",
+    });
+  };
+
   return (
-    <footer className="w-full border-t border-t-gray-200 border-dotted h-auto bg-gradient-to-b from-[#261D36] to-[#070111] px-5 md:px-20 py-16">
+    <footer className="w-full border-t border-t-gray-600 h-auto bg-gradient-to-b from-[#261D36] to-[#070111] px-5 md:px-20 py-16">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-5">
         <div className="col-span-1 h-auto">
           <Image
@@ -66,6 +78,7 @@ const Footer = () => {
             <div className="flex flex-col gap-4 mt-8 lg:mt-10">
               {links.map((link, index) => (
                 <Link
+                  onClick={(e) => handleNavClick(e, link.link)}
                   key={index}
                   href={link.link}
                   className="text-gray-400 hover:text-gray-200 tracking-wide text-lg transition-all hover:translate-x-3 duration-300 ease-in-out w-fit hover:font-semibold hover:underline"
@@ -107,7 +120,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row justify-between items-center mt-5 border-t border-t-gray-300 border-dotted">
+      <div className="flex flex-col md:flex-row justify-between items-center mt-5 border-t border-t-gray-600">
         <div>
           <span className="text-base text-gray-300 mt-5 flex items-center gap-2">
             <FaCopyright /> 2025 Alpha Warriors - All rights reserved.

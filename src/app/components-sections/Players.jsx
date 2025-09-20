@@ -13,7 +13,7 @@ const Players = () => {
   return (
     <section
       id="warriors"
-      className="w-full h-auto bg-gradient-to-b from-[#070111] to-[#261D36] px-5 md:px-20 pb-12"
+      className="w-full h-auto bg-gradient-to-b from-[#070111] to-[#261D36] px-5 md:px-20 py-10"
     >
       <div className="flex items-center gap-3">
         <Lottie

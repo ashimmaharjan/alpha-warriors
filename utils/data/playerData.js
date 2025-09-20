@@ -8,7 +8,7 @@ import { GiCricketBat, GiGloves } from "react-icons/gi";
 export const players = [
   {
     id: 1,
-    name: "Janak Chand Thakuri",
+    name: "Janak C. Thakuri",
     jersey: null,
     badges: ["Captain"],
     badgeIcons: [<TbCircleLetterCFilled className="text-3xl" />],

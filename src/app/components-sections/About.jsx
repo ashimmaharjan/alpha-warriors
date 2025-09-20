@@ -59,7 +59,7 @@ const About = () => {
               <div className="w-fit h-fit p-1.5 bg-gray-50 rounded-md shadow-inner text-primary border border-gray-200">
                 <Trophy />
               </div>
-              <span className="text-base md:text-xl text-gray-200">
+              <span className="text-base tracking-tight md:text-xl text-gray-200">
                 Championship Winners
               </span>
             </div>
@@ -68,7 +68,7 @@ const About = () => {
               <div className="w-fit h-fit p-1.5 bg-gray-50 rounded-md shadow-inner text-primary border border-gray-200">
                 <Users />
               </div>
-              <span className="text-base md:text-xl text-gray-200">
+              <span className="text-base tracking-tight md:text-xl text-gray-200">
                 Elite Squad
               </span>
             </div>
@@ -90,8 +90,8 @@ const About = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-14 mt-10">
-        <div className="col-span-1 lg:col-span-5 h-fit mt-10 md:mt-0">
+      <div className="grid grid-cols-1 gap-20 mt-10">
+        <div className="col-span-1 h-fit mt-10 md:mt-0">
           <div className="flex items-center gap-3">
             <Lottie
               className="size-14 border border-gray-400 p-1.5 rounded-2xl"
@@ -102,7 +102,7 @@ const About = () => {
             <h3 className="heading">Our Vision</h3>
           </div>
 
-          <p className="text-lg md:text-xl tracking-tight text-gray-400 mt-5">
+          <p className="text-lg md:text-xl tracking-tight text-gray-400 mt-5 text-justify">
             Our vision is to build a team that plays competitive and
             entertaining cricket while representing the values of dedication,
             respect, and unity. Beyond winning matches, we want to contribute to
@@ -112,7 +112,7 @@ const About = () => {
           </p>
         </div>
 
-        <div className="col-span-1 lg:col-span-7 h-fit">
+        <div className="col-span-1 h-fit">
           <div className="flex items-center gap-3">
             <Lottie
               className="size-14 border border-gray-400 p-1.5 rounded-2xl"
@@ -124,19 +124,22 @@ const About = () => {
             <h3 className="heading">Our Values</h3>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-4 gap-10 md:gap-3 mt-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-8">
             {ourValues.map((value, index) => (
-              <div key={index} className="col-span-1 h-fit">
-                <div className="flex items-center md:justify-center  gap-2.5">
-                  <span className="text-primary text-2xl bg-gray-200/90 p-2 rounded-2xl border border-gray-50">
+              <div
+                key={index}
+                className="col-span-1 h-fit border border-gray-600 py-6 rounded-2xl shadow-md"
+              >
+                <div className="flex items-center justify-center gap-2.5">
+                  <span className="text-primary text-3xl bg-gray-200/90 p-2 rounded-2xl border border-gray-50">
                     {value.icon}
                   </span>
-                  <h3 className="text-gray-100 text-2xl text-center">
+                  <h3 className="text-gray-100 text-2xl text-center font-semibold">
                     {value.title}
                   </h3>
                 </div>
 
-                <p className="text-gray-400 tracking-tight mt-3 text-left md:text-center">
+                <p className="text-gray-400 text-lg tracking-tight mt-5 text-center">
                   {value.desc}
                 </p>
               </div>
