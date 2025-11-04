@@ -35,9 +35,9 @@ const Stats = () => {
         {stats.map((stat, index) => (
           <div
             key={index}
-            className="col-span-1 relative border border-gray-300 rounded-2xl shadow py-5 flex flex-col px-5 gap-5"
+            className="col-span-1 relative border border-gray-300 skew-x-6 shadow-xl shadow-gray-800 py-5 flex flex-col px-5 gap-5"
           >
-            <h4 className="text-2xl font-semibold uppercase tracking-tighter text-gray-300">
+            <h4 className="text-2xl font-semibold uppercase -skew-x-6 tracking-tighter text-gray-300">
               {stat.title}
             </h4>
 

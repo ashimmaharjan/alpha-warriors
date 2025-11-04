@@ -43,7 +43,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="w-full border-t border-t-gray-600 h-auto bg-gradient-to-b from-[#261D36] to-[#070111] px-5 md:px-20 py-16">
+    <footer className="w-full border-t border-t-gray-600 h-auto bg-gradient-to-b to-[#261D36] from-[#070111] px-5 md:px-20 py-16">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-5">
         <div className="col-span-1 h-auto">
           <Image

@@ -7,7 +7,7 @@ const ContactUs = () => {
   return (
     <section
       id="contact"
-      className="w-full h-auto bg-gradient-to-b to-[#261D36] from-[#070111] px-5 md:px-20 py-16"
+      className="w-full h-auto bg-gradient-to-b from-[#261D36] to-[#070111] px-5 md:px-20 py-16"
     >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
         <div className="col-span-1 h-fit">
