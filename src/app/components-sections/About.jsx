@@ -128,18 +128,18 @@ const About = () => {
             {ourValues.map((value, index) => (
               <div
                 key={index}
-                className="col-span-1 h-fit border border-gray-600 py-6 rounded-2xl shadow-md"
+                className="col-span-1 h-fit border-[1.5px] border-gray-600 pb-6 shadow-md hover:shadow-2xl group hover:bg-white transition-all duration-300 ease-in-out"
               >
-                <div className="flex items-center justify-center gap-2.5">
-                  <span className="text-primary text-3xl bg-gray-200/90 p-2 rounded-2xl border border-gray-50">
-                    {value.icon}
-                  </span>
-                  <h3 className="text-gray-100 text-2xl text-center font-semibold">
+                <div className="bg-gradient-to-br from-gray-900 to-gray-800 size-18 ml-auto flex justify-center items-center text-[40px] text-[#08a88a] p-2 border border-r-0 border-t-0 border-gray-600">
+                  {value.icon}
+                </div>
+                <div className="flex items-center justify-center gap-2.5 mt-8">
+                  <h3 className="text-gray-100 group-hover:text-gray-700 text-3xl text-center font-semibold">
                     {value.title}
                   </h3>
                 </div>
 
-                <p className="text-gray-400 text-lg tracking-tight mt-5 text-center">
+                <p className="text-gray-400 group-hover:text-gray-500 text-lg tracking-tight mt-10 text-center">
                   {value.desc}
                 </p>
               </div>

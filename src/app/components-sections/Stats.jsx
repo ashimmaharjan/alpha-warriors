@@ -6,6 +6,8 @@ import warriorAnimation from "../../../public/animations/warriors.json";
 import chartAnimation from "../../../public/animations/chart.json";
 import bdayAnimation from "../../../public/animations/bday.json";
 
+import { motion, scale } from "motion/react";
+
 const Stats = () => {
   const stats = [
     {
@@ -33,9 +35,17 @@ const Stats = () => {
     <section className="w-full h-auto bg-gradient-to-b to-[#261D36] from-[#070111]/90 md:px-10 py-16">
       <div className="grid grid-cols-1 px-5 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {stats.map((stat, index) => (
-          <div
+          <motion.div
+            initial={{ scale: 1, skewX: 6 }}
+            whileHover={{
+              scale: 1.05,
+              transition: {
+                type: "spring",
+                stiffness: 300,
+              },
+            }}
             key={index}
-            className="col-span-1 relative border border-gray-300 skew-x-6 shadow-xl shadow-gray-800 py-5 flex flex-col px-5 gap-5"
+            className="col-span-1 relative border-2 rounded-2xl border-gray-300 shadow-lg bg-gray-900 shadow-gray-700 py-5 flex flex-col px-5 gap-5"
           >
             <h4 className="text-2xl font-semibold uppercase -skew-x-6 tracking-tighter text-gray-300">
               {stat.title}
@@ -53,7 +63,7 @@ const Stats = () => {
             <span className="text-5xl mt-10 md:text-6xl font-black text-[#08a88a] text-shadow-lg tracking-tighter">
               {stat.value}
             </span>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>
